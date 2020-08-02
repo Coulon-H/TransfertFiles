@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eee936e3-40c0-4dfd-9ab3-84b5de37de53" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="g4zln0l8" />
+  </component>
+  <component name="ProjectId" id="1euEtjKBztYw7Edx2NDvZN9vVY2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Calculatrice" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="Application.TextHandler">
+    <configuration name="TextHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.firstguiprojects.TextHandler" />
+      <module name="FirstGUIProjects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.firstguiprojects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.firstguiprojects.UI" />
+      <module name="FirstGUIProjects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.firstguiprojects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TextHandler" />
+        <item itemvalue="Application.UI" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eee936e3-40c0-4dfd-9ab3-84b5de37de53" name="Default Changelist" comment="" />
+      <created>1595163294346</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595163294346</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1596138309509">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1596138309509" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1596137888544">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596137888544" />
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1596288611523">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596288611523" />
+    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1596288611523">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596288611523" />
+    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1596288611523">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596288611523" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1596288611523">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596288611523" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1596134079876">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596134079876" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1596400060828">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1596400060828" />
+  </component>
+</project>
