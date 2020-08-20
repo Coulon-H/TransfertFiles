@@ -19,7 +19,8 @@ import java.util.logging.Logger;
 public class Server {
     private static int port = 82;
     Socket client = null;
-    public Server() throws IOException {//Server Constructor
+
+    public Server() throws IOException {
         try (ServerSocket server = new ServerSocket(port)) {
             this.client = server.accept();
             Thread t = new ClientHandlerReceive(client);
@@ -32,31 +33,32 @@ public class Server {
 class ClientHandlerReceive extends Thread {
     private String[] s = null;
     private FileOutputStream fout;
-    private InputStream ins = null;
     private BufferedOutputStream dout = null;
+    private InputStream ins = null;
+    DataInputStream din;
     private File f;
     private Socket client;
     
-    ClientHandlerReceive(Socket client){//Constructor
+    ClientHandlerReceive(Socket client){
         this.client = client;
     }
 
-    public void receive() throws IOException {//Function receiving the name and the length of the file
+    public void receive() throws IOException {
         try{
             String r = null;
-            ins = client.getInputStream();
-            byte[] receiver = new byte[1000];
+            ins = this.client.getInputStream();
+            din = new DataInputStream(ins);
 
-            ins.read(receiver);
-
-            r = Arrays.toString(receiver);
-            s = r.split(" ");
+            r = din.readUTF();
+            System.out.println(r);
+            s = r.split("/");
 
         } catch (IOException ex) {
             Logger.getLogger(ClientHandlerReceive.class.getName()).log(Level.SEVERE, null, ex);
         }finally {
             if(ins != null){
                 ins = null;
+                din = null;
             }
         }
     }
@@ -68,10 +70,10 @@ class ClientHandlerReceive extends Thread {
              f = new File(s[0]);
              fout = new FileOutputStream(f);
              dout = new BufferedOutputStream(fout);
-             ins = client.getInputStream();
+             ins = this.client.getInputStream();
 
-             int taille = Integer.parseInt(s[1]);
-             byte[] receiver = new byte[taille];
+             long taille = Long.parseLong(s[1]);
+             byte[] receiver = new byte[(int) taille];
              int bytesRead = 0;
 
              while((bytesRead = ins.read(receiver)) != -1)
@@ -79,9 +81,11 @@ class ClientHandlerReceive extends Thread {
 
              dout.flush();
              client.close();
+             System.out.println("File received");
             
         } catch (IOException ex) {
             Logger.getLogger(ClientHandlerReceive.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+
 }

@@ -9,6 +9,7 @@ package com.mycompany.firstguiprojects;
  *
  * @author USER
  */
+
 import java.io.*;
 import java.net.*;
 
@@ -16,19 +17,20 @@ public class Client {
     // Envoi
     private int port;
     private Socket client = null;
-    private FileInputStream fin;   
-    private OutputStream out = null;
+    private FileInputStream fin;   //Composants pour l'envoi
     private BufferedInputStream din = null;
+    private OutputStream out = null;
+    DataOutputStream dout;
     File fc ;
     String host;
 
-    Client(String h, int p, File f){ //Constructor
+    Client(String h, int p, File f){
         this.port = p;
         this.fc = f;
         this.host = h;
     }
 
-    public void send() throws IOException{ //Function sending the file
+    public void send() throws IOException{
         try {
             client = new Socket(host, port);
             fichename(fc);
@@ -43,6 +45,7 @@ public class Client {
             out.write(backup, 0, backup.length);
 
             out.flush();
+            System.out.println("File send !!!");
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -72,23 +75,23 @@ public class Client {
         }
     }
 
-    public void fichename(File f){ // Function sending the name and the length of the file
+    public void fichename(File f){ // Fonction envoyant le nom et la taille du fichier
         try{
             String file = f.getName() + "/"+ f.length();
-            byte[] b = file.getBytes();
             out = client.getOutputStream();
+            dout = new DataOutputStream(out);
 
-            out.write(b, 0, b.length);
-            out.flush();
+            dout.writeUTF(file);
+
 
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             if(out != null) {
                 out = null;
+                dout = null;
             }
         }
     }
-
 
 }
